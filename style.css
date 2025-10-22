@@ -1,0 +1,22 @@
+/* 自定义样式 */
+body, html {
+    height: 100%;
+    margin: 0;
+    /* 使用 Tailwind 推荐的字体栈作为后备 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 画布样式 */
+canvas {
+    touch-action: none; /* 防止在画布上绘图时滚动页面 */
+    cursor: crosshair;
+    border-radius: 0.5rem; /* 圆角 */
+}
+
+/* 选中的颜色画笔样式 */
+.color-brush.selected {
+    outline: 4px solid #007aff; /* 蓝色高亮外框 */
+    outline-offset: 2px;
+    transform: scale(1.1); /* 放大 */
+}
+
